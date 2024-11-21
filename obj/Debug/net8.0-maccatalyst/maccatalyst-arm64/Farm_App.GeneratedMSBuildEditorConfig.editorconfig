@@ -1,0 +1,83 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Farm_App
+build_property.ProjectDir = /Users/jeetkhoda/Desktop/4_JS/Farm_App/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Pages/DataView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Pages.DataView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/DataView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/DataView.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Pages/DeleteAnimal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Pages.DeleteAnimal.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/DeleteAnimal.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/DeleteAnimal.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Pages/InsertAnimal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Pages.InsertAnimal.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/InsertAnimal.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/InsertAnimal.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Pages/Predictions.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Pages.Predictions.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/Predictions.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/Predictions.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Pages/Profits.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Pages.Profits.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/Profits.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/Profits.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Pages/Query.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Pages.Query.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/Query.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/Query.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Pages/UpdateAnimal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Pages.UpdateAnimal.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/UpdateAnimal.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/UpdateAnimal.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/jeetkhoda/Desktop/4_JS/Farm_App/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Farm_App.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml

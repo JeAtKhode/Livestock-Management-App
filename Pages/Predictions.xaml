@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Farm_App.Pages.Predictions"
+             Title="Predictions"
+             BackgroundColor="white">
+    <Grid RowSpacing="25" RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="WidthRequest" Value="350"/>
+                <Setter Property="TextColor" Value="Black"/> 
+                
+            </Style>
+        </Grid.Resources>
+
+        
+            <Label Grid.Row="0" Text="Statistics" FontSize="Large" HorizontalOptions="Center"/>
+            <Label Grid.Row="1" Text="30 Day Goverment Tax"/>
+            <Label Grid.Row="2" x:Name="Gov_Tax" BackgroundColor="#FFC9DBEB" />
+            <Label Grid.Row="3" Text="Daily Profit"/>
+            <Label Grid.Row="4" x:Name="Daily_Pft" BackgroundColor="#FFC9DBEB"/>
+            <Label Grid.Row="5" Text="Average Weight"/>
+            <Label Grid.Row="6" x:Name="Avg_Wgt" BackgroundColor="#FFC9DBEB"/>
+            <Label Grid.Row="7" Text="Current Data" FontSize="Medium"/>
+            <Label Grid.Row="8" Text="Average Profit per Cow"/>
+            <Label Grid.Row="9" x:Name="Avg_Cow_Pft" BackgroundColor="#FFC9DBEB"/>
+            <Label Grid.Row="10" Text="Average Profit per Sheep"/>
+            <Label Grid.Row="11" x:Name="Avg_Sheep_Pft" BackgroundColor="#FFC9DBEB"/>
+            <Label Grid.Row="12" x:Name="Profit_Stat" BackgroundColor="#FFC9DBEB"/>
+            <Button Grid.Row="16" Clicked="Stats_Btn" Text="Calculate Stats"/>
+    </Grid>
+</ContentPage>

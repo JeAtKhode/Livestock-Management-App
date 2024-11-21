@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Farm_App.Pages.InsertAnimal"
+             Title="Insert Animal"
+             BackgroundColor="white">
+    <Grid  RowSpacing="25" RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*" VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="HeightRequest" Value="20"/>
+                <Setter Property="WidthRequest" Value="350"/>
+                <Setter Property="TextColor" Value="Black"/> 
+            </Style>
+        </Grid.Resources>
+
+        <Label Grid.Row="0" Text="Insert Animal" FontSize="Large"/>
+        <Label Grid.Row="1"  Text="Select Livestock Type:"  />
+        <Picker Grid.Row="2" x:Name="Typ_Pkr"  SelectedIndexChanged="OnTypeSelectedIndexChanged" 
+              BackgroundColor="#FFC9DBEB" TextColor="Black">
+            <Picker.Items>
+                <x:String>Cow</x:String>
+                <x:String>Sheep</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Grid.Row="3" Text="Select Colour:"  />
+        <Picker Grid.Row="4" x:Name="Clr_Pkr"  BackgroundColor="#FFC9DBEB" TextColor="Black">
+            <Picker.Items>
+                <x:String>Black</x:String>
+                <x:String>White</x:String>
+                <x:String>Red</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Entry Grid.Row="5" x:Name="Wgt_Entry" Placeholder="Enter Weight (KG)"  BackgroundColor="#FFC9DBEB" />   
+        <Entry Grid.Row="6" x:Name="Cst_Entry" Placeholder="Enter Cost ($)"  BackgroundColor="#FFC9DBEB"/>
+        <Entry Grid.Row="7" x:Name="Mlk_Entry" Placeholder="Enter Milk (L)"   IsVisible="False" BackgroundColor="#FFC9DBEB"/>
+        <Entry Grid.Row="7" x:Name="Wool_Entry" Placeholder="Enter Wool (KG)"   IsVisible="False" BackgroundColor="#FFC9DBEB"/>
+        
+        <Button Grid.Row="8" Text="RESET" Clicked="Reset_Btn"  BackgroundColor="#FF7373DD"/>
+        <Button Grid.Row="9" Text="INSERT" Clicked="Insert_Btn"  BackgroundColor="#FF12BB12"/>
+
+
+
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Farm_App.Pages.Query"
+             Title="Query"
+             BackgroundColor="White">
+             
+    <Grid  RowSpacing="25" RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" VerticalOptions="Center" HorizontalOptions="Center" >
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="HeightRequest" Value="35"/>
+                <Setter Property="WidthRequest" Value="450"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="#FFC9DBEB"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+        </Grid.Resources>
+        
+        <Label Text="Query Animal Data"  Grid.Row="0" FontSize="Large"/>
+        <Label Text="Select Livestock Type:"  Grid.Row="1"/>
+        <Picker x:Name="Typ_Pkr" SelectedIndexChanged="OnTypeSelectedIndexChanged" 
+                 Grid.Row="2" BackgroundColor="#FFC9DBEB" TextColor="Black">
+            <Picker.Items>
+                <x:String>Cow</x:String>
+                <x:String>Sheep</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Select Colour:"  Grid.Row="3"/>
+        <Picker x:Name="Clr_Pkr" Grid.Row="4"  BackgroundColor="#FFC9DBEB" TextColor="Black">
+            <Picker.Items>
+                <x:String>All</x:String>
+                <x:String>Black</x:String>
+                <x:String>White</x:String>
+                <x:String>Red</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Text="Search" Clicked="Search_Btn" Grid.Row="5" />
+        <Button Text="Reset" Clicked="Reset_Btn" Grid.Row="6"/>
+
+        <Label x:Name="label1" Text="Number of Livestock:" Grid.Row="8" />
+        <Label x:Name="Ttl_Count_Lbl" Grid.Row="9" BackgroundColor="#FFC9DBEB" HeightRequest="35"/>
+
+        <Label Text="Percentage of Selected Livestock:" Grid.Row="10" />
+        <Label x:Name="Per_Lbl" Grid.Row="11" BackgroundColor="#FFC9DBEB" HeightRequest="35"/>
+
+        <Label Text="Daily Tax of Selected Livestock:" Grid.Row="12" />
+        <Label x:Name="Ttl_Tax_Lbl" Grid.Row="13" BackgroundColor="#FFC9DBEB" HeightRequest="35"/>
+
+        <Label Text="Daily Profit of Selected Livestock:" Grid.Row="14" />
+        <Label x:Name="Pft_Lbl" Grid.Row="15" BackgroundColor="#FFC9DBEB" HeightRequest="35"/>
+
+        <Label Text="Average Weight:" Grid.Row="16" />
+        <Label x:Name="Avrg_Wgh_lbl" Grid.Row="17" BackgroundColor="#FFC9DBEB" HeightRequest="35"/>
+
+        <Label Text="Total Produce Amount per Day:" Grid.Row="18" />
+        <Label x:Name="Ttl_Prdc_Lbl" Grid.Row="19" BackgroundColor="#FFC9DBEB" HeightRequest="35"/>
+    </Grid>
+</ContentPage>

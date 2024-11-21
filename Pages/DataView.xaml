@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Farm_App.Pages.DataView"
+             Title="Farm Animals Details"
+             BackgroundColor="White">
+    <VerticalStackLayout>
+        <Grid BackgroundColor="black" ColumnDefinitions="*,*,*,*,*,*">
+            <Grid.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="HorizontalOptions" Value="Center"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="TextColor" Value="white"/>
+                </Style>
+            </Grid.Resources>
+            <Label Grid.Column="0" Text="Id" />
+            <Label Grid.Column="1" Text="Cost" />
+            <Label Grid.Column="2" Text="Weight" />
+            <Label Grid.Column="3" Text="Colour" />
+            <Label Grid.Column="4" Text="Milk"/>
+            <Label Grid.Column="5" Text="Wool"/>
+        </Grid>
+
+        <CollectionView x:Name="DataListingView" BackgroundColor="white" ItemsSource="{Binding Animals}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid BackgroundColor="LightBlue" ColumnDefinitions="*,*,*,*,*,*">
+                        <Label Grid.Column="0" Text="{Binding Id}" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="{Binding Cost}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Small"/>
+                        <Label Grid.Column="2" Text="{Binding Weight}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Small"/>
+                        <Label Grid.Column="3" Text="{Binding Colour}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Small"/>
+                        <Label Grid.Column="4" Text="{Binding Milk}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Small"/>
+                        <Label Grid.Column="5" Text="{Binding Wool}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Small"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentPage>

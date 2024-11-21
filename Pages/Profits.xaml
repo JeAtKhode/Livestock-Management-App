@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Farm_App.Pages.Profits"
+             Title="Profits"
+             BackgroundColor="White">
+   <Grid RowSpacing="25" RowDefinitions="*,*,*,*,*,*,*,*" VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="WidthRequest" Value="350"/>
+                <Setter Property="TextColor" Value="Black"/>     
+            </Style>
+        </Grid.Resources>
+            <Label Grid.Row="0" Text="Profit On Investment Forecast" FontSize="Large" HorizontalOptions="Center" />
+            <Label Grid.Row="1" Text="Select Animal Type"/>
+            <Picker Grid.Row="2" x:Name="Typ_Pkr" BackgroundColor="#FFC9DBEB" TextColor="Black">
+                <Picker.Items>
+                    <x:String>Cow</x:String>
+                    <x:String>Sheep</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Grid.Row="3" Text="Enter Animal Amount"/>
+            <Entry  Grid.Row="4" x:Name="Animal_Amt" Placeholder="Amount:" TextColor="Black"/>
+            <Label  Grid.Row="5" x:Name="Result_Lbl" Text="Information" HorizontalOptions="Center"/>
+           
+            <Button  Grid.Row="6" Clicked="Calc_Btn" Text="Calculate Forecast" />
+            <Button  Grid.Row="7" Clicked="Reset_Btn" Text="Reset" />
+        
+        </Grid>
+</ContentPage>

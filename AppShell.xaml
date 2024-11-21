@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Farm_App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Farm_App"
+    xmlns:Pages="clr-namespace:Farm_App.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Farm_App">
+
+    <TabBar>
+        <Tab Title="Data" Shell.NavBarIsVisible="False">
+            <ShellContent ContentTemplate="{DataTemplate Pages:DataView}"/>
+        </Tab>
+        <Tab Title="Query" Shell.NavBarIsVisible="False">
+            <ShellContent ContentTemplate="{DataTemplate Pages:Query}"/>
+        </Tab>
+        <Tab Title="Insert" Shell.NavBarIsVisible="False">
+            <ShellContent ContentTemplate="{DataTemplate Pages:InsertAnimal}"/>
+        </Tab>
+        <Tab Title="Update" Shell.NavBarIsVisible="False">
+            <ShellContent ContentTemplate="{DataTemplate Pages:UpdateAnimal}"/>
+        </Tab>
+        <Tab Title="Delete" Shell.NavBarIsVisible="False">
+            <ShellContent ContentTemplate="{DataTemplate Pages:DeleteAnimal}"/>
+        </Tab>
+        <Tab Title="Statistics" Shell.NavBarIsVisible="False">
+            <ShellContent ContentTemplate="{DataTemplate Pages:Predictions}"/>
+        </Tab>
+        <Tab Title="Profits" Shell.NavBarIsVisible="False">
+            <ShellContent ContentTemplate="{DataTemplate Pages:Profits}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

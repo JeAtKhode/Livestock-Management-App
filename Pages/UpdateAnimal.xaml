@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Farm_App.Pages.UpdateAnimal"
+             Title="Update Animal"
+             BackgroundColor="White"
+             >
+    <Grid HorizontalOptions="Center"
+          RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" RowSpacing="25" VerticalOptions="Center">
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="HeightRequest" Value="20"/>
+                <Setter Property="WidthRequest" Value="350"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="#FFC9DBEB"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+        </Grid.Resources>
+
+        <Label Grid.Row="0"  Text="Update Animal" FontSize="Large"/>
+        <Label Grid.Row="1" Text="Enter Animal ID" FontSize="Small"/>
+        <Entry Grid.Row="2" x:Name="Id_Entry" Placeholder="Enter Animal ID:"  TextColor="Black"/>
+        <Button Grid.Row="3" Clicked="Search_Btn" Text="SEARCH"/>
+        <Label Grid.Row="4" x:Name="Result_Lbl"   Text="Results" FontSize="Small"/>
+        <Button Grid.Row="5" Text="Reset" Clicked="Reset_Btn"  Grid.Column="1" />
+
+        <Label Grid.Row="6" Text="Select Colour:"  />
+        <Picker Grid.Row="7" x:Name="Clr_Pkr"  IsVisible="False" BackgroundColor="#FFC9DBEB" TextColor="Black">
+            <Picker.Items>
+                <x:String>Black</x:String>
+                <x:String>White</x:String>
+                <x:String>Red</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Grid.Row="8" Text="Weight (kg):"   />
+        <Entry Grid.Row="9" x:Name="Wgt_Entry" Placeholder="Enter Weight"   IsVisible="False"/>
+
+        <Label Grid.Row="10" Text="Cost ($):"  />
+        <Entry Grid.Row="11" x:Name="Cst_Entry" Placeholder="Enter Cost" IsVisible="False" />
+
+        <Label Grid.Row="12" Text="Milk (kg):"   x:Name="milkLabel" IsVisible="False"/>
+        <Entry Grid.Row="13" x:Name="Mlk_Entry" Placeholder="Enter Milk Produced"  Grid.Column="1" IsVisible="False"/>
+
+        <Label Grid.Row="12" Text="Wool (kg):"   x:Name="woolLabel" IsVisible="False"/>
+        <Entry Grid.Row="13" x:Name="Wool_Entry" Placeholder="Enter Wool Produced"  Grid.Column="1" IsVisible="False"/>
+
+        <Button Grid.Row="14" x:Name="UpdateBtn"   Clicked="UpdateBtn_Click" Text="UPDATE" IsVisible="False"/>
+    </Grid>
+</ContentPage>
